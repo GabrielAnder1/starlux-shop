@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="STARLUX SHOP - Tienda online de moda joven en Maturín.">
+  <title>STARLUX SHOP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Menú Superior -->
+  <header class="header neu-flat">
+    <div class="container header-content">
+      <a href="#" class="logo">STARLUX</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#categorias">Categorías</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#info">Info</a></li>
+        </ul>
+      </nav>
+      <button id="cart-btn" class="cart-toggle neu-btn-icon" aria-label="Abrir carrito">
+        <!-- Icono de carrito actualizado -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        <span id="cart-count" class="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Dividido con Carrusel -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Estilo que define tu esencia</h1>
+          <p>Descubre la nueva colección diseñada para ti.</p>
+          <a href="#productos" class="neu-btn primary">Ver Colección</a>
+        </div>
+        <div class="hero-image neu-pressed">
+          <img id="hero-img" src="" alt="Colección STARLUX" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Barra de Información (Feature Bar) -->
+    <section class="feature-bar">
+      <div class="container feature-grid">
+        <div class="feature-item neu-flat-accent">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <span>Envíos a todo el país</span>
+        </div>
+        <div class="feature-item neu-flat-accent">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Tienda online en Maturín</span>
+        </div>
+        <div class="feature-item neu-flat-accent">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span>Soporte por WhatsApp</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Categorías Deslizante (Sin título) -->
+    <section id="categorias" class="section">
+      <div class="container">
+        <div class="category-wrapper">
+          <button id="scroll-left" class="scroll-btn neu-btn-icon" aria-label="Deslizar izquierda">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div id="category-list" class="category-list">
+            <!-- Se llena dinámicamente con JS -->
+          </div>
+          <button id="scroll-right" class="scroll-btn neu-btn-icon" aria-label="Deslizar derecha">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Productos (Sin título) -->
+    <section id="productos" class="section">
+      <div class="container">
+        <div id="product-list" class="product-grid">
+          <p class="loading-text">Cargando productos...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Información y Ayuda -->
+    <section id="info" class="section info-section neu-flat">
+      <div class="container">
+        <div class="info-block">
+          <h2>Sobre Nosotros</h2>
+          <div class="social-links">
+            <a href="https://www.instagram.com/starlux_shop7?stkn=bHNoNmMzcmc3azBo" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <span>Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/people/Starlux/61577418322024/?mibextid=wwXIfr&rdid=77IvYnZgmhmw3I7v&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1HbbaeTYEf%2F%3Fmibextid%3DwwXIfr" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              <span>Facebook</span>
+            </a>
+            <a href="https://www.tiktok.com/@starlux_shop?lang=es-419&is_from_webapp=1&sender_device=mobile&sender_web_id=7652853040781723156" target="_blank" rel="noopener" aria-label="TikTok" class="social-link">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+              <span>TikTok</span>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=584121035122&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-link">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="info-block">
+          <h2>Ayuda</h2>
+          <div class="help-links">
+            <a href="https://api.whatsapp.com/send/?phone=584121035122&text=Hola%20STARLUX%2C%20quisiera%20saber%20el%20estado%20de%20mi%20pedido." target="_blank" rel="noopener" class="help-link">Estado del Pedido</a>
+            <a href="https://api.whatsapp.com/send/?phone=584121035122&text=Hola%20STARLUX%2C%20quisiera%20conocer%20la%20informaci%C3%B3n%20sobre%20los%20env%C3%ADos." target="_blank" rel="noopener" class="help-link">Envíos</a>
+            <a href="https://api.whatsapp.com/send/?phone=584121035122&text=Hola%20STARLUX%2C%20me%20gustar%C3%ADa%20conocer%20sus%20m%C3%A9todos%20y%20sistemas%20de%20pago." target="_blank" rel="noopener" class="help-link">Métodos de Pago</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 STARLUX SHOP. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Modal del Carrito -->
+  <div id="cart-modal" class="cart-modal hidden">
+    <div class="cart-content neu-flat">
+      <div class="cart-header">
+        <h3>Tu Carrito</h3>
+        <button id="close-cart" class="close-btn" aria-label="Cerrar carrito">&times;</button>
+      </div>
+      <div id="cart-items" class="cart-items">
+        <!-- Items del carrito -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">Total: <span id="cart-total-amount">$0,00</span></div>
+        <button id="checkout-btn" class="neu-btn primary full-width">Finalizar pedido por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
